@@ -1,0 +1,17 @@
+body {
+	background-color: ##FCFCFC;
+}
+
+.gradient_container {
+	border-radius: 12px 12px 0px 0px;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background-color: #FFF;
+}
+
+.gradient {
+	width: 100%;
+	height: 160px;
+	border-radius: 10px 10px 0px 0px;
+}
