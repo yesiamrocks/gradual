@@ -1,0 +1,57 @@
+/* gradient-styles.css */
+
+/* --- Base Animation --- */
+/* This keyframes rule defines the common animation for all gradients */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- Core Gradient Class --- */
+/* This class sets up the common properties for any animated gradient */
+.animated-gradient-base {
+  /* Required properties for the animation to work */
+  background-size: 400% 400%; /* Larger than 100% allows for movement */
+  animation: gradient-animation 15s ease infinite; /* Apply the animation */
+  /* Add any other common styles like border-radius, overflow: hidden, etc. */
+}
+
+/* --- Specific Gradient Classes --- */
+/* Define your unique gradient color combinations here */
+
+/* Example 1: Blue to Pink */
+.gradient-blue-pink {
+  background-image: linear-gradient(to right, #21d4fd, #b721ff);
+}
+
+/* Example 2: Purple to Green */
+.gradient-purple-green {
+  background-image: linear-gradient(to right, #b3ffab, #12fff7);
+}
+
+/* Example 3: Sunrise Colors */
+.gradient-sunrise {
+  background-image: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+/* Example 4: Deep Ocean */
+.gradient-deep-ocean {
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* Example 5: Lush Forest */
+.gradient-lush-forest {
+  background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+/* You can add more gradient combinations here */
+/* .gradient-your-name {
+    background-image: linear-gradient(direction, color1, color2, ...);
+} */
